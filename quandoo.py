@@ -98,6 +98,15 @@ class TestQuandoo(unittest.TestCase):
                                
     def tearDown(self):
         self.driver.close()
+
+if __name__ == '__main__':
+    import xmlrunner
+
+    unittest.main(
+        testRunner=xmlrunner.XMLTestRunner(output='test-reports'),
+        failfast=False,
+        buffer=False,
+        catchbreak=False)
         
 
 

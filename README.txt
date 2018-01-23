@@ -6,16 +6,20 @@ Quandoo QA Home Assessment
 Prerequisites
 -------------
 
-1. Either Python 2 or 3 (I think that’s all)
+1. Either Python 2 or 3
+
+2. Install unittest-xml-reporting: pip install unittest-xml-reporting
 
 Running the Tests
 -----------------
 
 1. Open the folder in the command line
 
-2. To run all tests:     python -m unittest quandoo
+2. To run all tests: python -m unittest quandoo
 
 3. To run a single test: python -m unittest quandoo.TestQuandoo.test_login_successs
+
+4. To run all tests and generate xml report: python -m quandoo
 
 Notes
 -----
@@ -24,7 +28,9 @@ I’m afraid I haven’t used Cucumber professionally before, though I’d be ve
 
 At the moment each test just runs arbitrarily in either Firefox or Chrome, but obviously that could be adapted based on whatever your process it.
 
-Hopefully you don’t have any trouble running the tests, but just in case I’ve included a quick video, quandoo.gif. 
+Hopefully you don’t have any trouble running the tests, but just in case I’ve included a quick video, quandoo.gif.
+
+To see the xml report, run step 4 above and then look in ./test-reports/.
 
 
 Sam Alexander
