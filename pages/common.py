@@ -4,7 +4,7 @@ def input_text(driver, selector_type, selector, value):
     element = get_element(driver, selector_type, selector)
     element.send_keys(value)
 
-def hover(driver, selector_type, selector,):
+def hover(driver, selector_type, selector):
     element = get_element(driver, selector_type, selector)
     hover = ActionChains(driver).move_to_element(element)
     hover.perform()
